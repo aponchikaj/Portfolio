@@ -6,6 +6,29 @@
     scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    padding: 10px;
+    border-radius: 100px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0F0F0F;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(182, 182, 182);
+  }
+
+
 @font-face {
     font-family: 'MonoIBM';
     src: url('./assets/fonts/IBMPlexMono-Regular.ttf');
