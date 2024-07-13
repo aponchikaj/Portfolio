@@ -14,9 +14,9 @@ export class ProjectsComponent {
       iuareli:'https://iluzia.vercel.app'
     },
     {
-      name:"Lazare's Art",
-      img:'../../assets/Image/Art.png',
-      iuareli:'https://lazares-art.vercel.app'
+      name:"Lazare's Osiris",
+      img:'../../assets/Image/orsisirs.png',
+      iuareli:'https://osiris-lazare.vercel.app'
     },
     {
       name:"Who's Die Antwoord",
