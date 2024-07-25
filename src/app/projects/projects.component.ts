@@ -29,9 +29,9 @@ export class ProjectsComponent {
       iuareli:'https://todo-by-lazare.vercel.app'
     },
     {
-      name:"Blog Card",
-      img:'../../assets/Image/Blog.png',
-      iuareli:'https://blog-card-henna.vercel.app'
+      name:"Lisa",
+      img:'../../assets/Image/lisa.png',
+      iuareli:'https://lisa-bot.vercel.app'
     },
     {
       name:"Results Summary",
