@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
-import { ApiService } from './services/api.service';
 import { HttpClient, HttpClientModule, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -25,7 +24,6 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     provideClientHydration(),
-    ApiService,
   ],
   bootstrap: [AppComponent]
 })
