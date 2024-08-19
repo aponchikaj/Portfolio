@@ -11,22 +11,6 @@
 
             </h3>
         </section>
-        <section class="flex flex-col items-center justify-center h-[40vh] my-[10px]">
-            <h1 class="font-medium text-[28px]">Contact</h1>
-            <form class="w-full flex flex-col justify-center items-center">
-                <section class="flex flex-col my-[10px]">
-                    <label>Enter your Email</label>
-                    <input type="text" name="email" required class="p-[10px] rounded-lg text-gray-950" [(ngModel)]="userMail">
-                </section>
-                <section class="flex flex-col">
-                    <label>Enter message</label>
-                    <input type="text" name="message" required class="p-[10px] rounded-lg text-gray-950" max="400" maxlength="400" [(ngModel)]="Message">
-                </section>
-                <section class="p-[10px]">
-                    <button class="p-[10px] mt-[10px] bg-[#ffffff] text-gray-950 rounded-lg duration-300 ease-in-out hover:scale-110" (click)="sendMessage()">Submit</button>
-                </section>
-            </form>
-        </section>
         <footer class="flex justify-center items-end">
             <h1>Created by Lazare Mirziashvili 2024</h1>
         </footer>
