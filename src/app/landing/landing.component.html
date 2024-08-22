@@ -1,27 +1,4 @@
 <header class="w-full h-[110vh] flex flex-col bg-[#0F0F0F]">
-    <nav class="w-full p-[10px] text-white flex justify-around items-center h-[10vh] bg-[#141414]">
-        <section >
-            <a href="../../index.html" *ngIf="isNormal"><h1 class="text-[28px] font-IBM transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Lazare</h1></a>
-        </section>
-        <section class="font-Pro hidden md:flex">
-            <a href="#1" class="mx-[15px] text-2xl transition ease-in-out hover:-translate-x-1 hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
-            <a href="#2" class="mx-[15px] text-2xl transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Projects</a>
-            <a href="#3" class="mx-[15px] text-2xl transition ease-in-out hover:translate-x-1 hover:scale-110 hover:text-[#ccc] duration-300">About</a>
-        </section>
-        <section class="flex md:hidden items-center" *ngIf="isNormal">
-            <button class="mt-[5px]" (click)="OpenMenu()">
-                <i class="fa-solid fa-bars text-[34px]"></i>
-            </button>
-        </section>
-        <section class="flex md:hidden items-center mx-auto" *ngIf="isMenu">
-            <a href="#1" class="mx-[15px] text-2xl transition ease-in-out hover:-translate-x-1 hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
-            <a href="#2" class="mx-[15px] text-2xl transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-[#ccc] duration-300">Projects</a>
-            <a href="#3" class="mx-[15px] text-2xl transition ease-in-out hover:translate-x-1 hover:scale-110 hover:text-[#ccc] duration-300">About</a>
-            <button class="text-red-500" (click)="CloseMenu()"><i class="fa-solid fa-x text-[23px] mt-[5px] mx-[5px]"></i></button>
-        </section>
-    </nav>
-
-
     <main class="flex flex-col text-start w-full font-IBM justify-center items-center h-[90vh] text-white">
         <section class="text-center flex flex-col p-[10px] m-[10px] justify-center items-center md:w-[40%] md:text-start md:justfy-start md:items-start">
             <section>
@@ -32,10 +9,19 @@
             <section class="md:w-[200px] my-[20px]">
                 <p>Hey I'm Lazare Frontend Developer from Tbilisi,Georgia</p>
             </section>
+            <section>
+                <a href="https://github.com/aponchikaj"><i class="fa-brands fa-github text-[30px]"></i></a>
+                <a href="https://www.linkedin.com/in/lazare-mirziashvili-66092b323/"><i class="fa-brands fa-linkedin text-[30px] mx-[10px]"></i></a>
+            </section>
             <section class="py-[20px] flex ">
                 <a href="#2" class="rounded-sm border border-[#3572EF] p-[15px] transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#3572EF] duration-300 ">
                     <button>
                         Projects
+                    </button>
+                </a>
+                <a href="../../assets/Image/LazareMirziashvili.pdf" download="cv" class="rounded-sm mx-[20px] border border-[#3572EF] p-[15px] transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-[#3572EF] duration-300 ">
+                    <button>
+                        CV
                     </button>
                 </a>
             </section>
