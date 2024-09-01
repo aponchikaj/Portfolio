@@ -5,23 +5,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AboutComponent } from './about/about.component';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
+import { ApiService } from './api/api.service';
+import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     ProjectsComponent,
-    AboutComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),
+    ApiService,
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

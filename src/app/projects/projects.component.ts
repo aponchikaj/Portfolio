@@ -34,9 +34,9 @@ export class ProjectsComponent {
       iuareli:'https://lisa-bot.vercel.app'
     },
     {
-      name:"Noter",
-      img:'../../assets/Image/noter.png',
-      iuareli:'https://noter-lazare.vercel.app'
+      name:"TeenWork",
+      img:'../../assets/Image/teenwork.PNG',
+      iuareli:'https://teenwork.vercel.app/home'
     },
   ]
 

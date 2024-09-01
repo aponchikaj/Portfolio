@@ -1,0 +1,37 @@
+<main class="w-full h-[90vh] bg-[#0F0F0F]">
+
+    <section class="font-IBM text-white w-full flex justify-center items-center md:justify-start text-2xl md:text-[28px] p-[10px]">
+        <h1 class="px-[30px]">Contact</h1>
+    </section>
+
+    <section class="font-IBM text-white flex justify-center items-center w-full h-[77vh] flex-col">
+        <form method="post">
+            <section class="flex justify-center items-center">
+                <p class="font-IBM text-md  text-white ">{{ServerMessage}}</p>
+            </section>
+            <section class="flex flex-col my-[10px] items-center md:items-start m-[10px] md:m-none">
+                <label>Email:</label>
+                <input type="text" class="rounded-[2px] p-[10px] flex w-full font-IBM text-gray-950" required name="Email" [(ngModel)]="Email">
+            </section>
+
+            <section class="flex flex-col my-[10px] items-center md:items-start m-[10px] md:m-none">
+                <label>Message:</label>
+                <textarea name="Message" id="MSG" cols="25" rows="10" class="rounded-[2px] p-[10px] text-gray-950 resize-none" [(ngModel)]="Message" required></textarea>
+            </section>
+
+            <section class="flex justify-center my-[10px] p-[10px]">
+                <button class="p-[10px] rounded-[2px] bg-green-500 duration-500 ease-in-out hover:scale-110 font-IBM text-gray-950" (click)="SendMsg()">Submit</button>
+            </section>
+
+        </form>
+        <section class="text-white text-center flex justify-center">
+            <a href="https://www.linkedin.com/in/lazare-mirziashvili-66092b323/"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+            <a href="https://github.com/aponchikaj"><i class="fa-brands fa-github text-2xl mx-[5px]"></i></a>
+        </section>
+    </section>
+
+    <footer class="text-white font-IBM flex justify-center">
+        <h5>Lazare Mirziashvili &copy; 2024</h5>
+    </footer>
+
+</main>
