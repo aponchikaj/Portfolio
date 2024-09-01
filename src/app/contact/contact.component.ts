@@ -23,6 +23,8 @@ export class ContactComponent {
 
     this.api.SendMessage(Data).subscribe((R)=>{
       this.ServerMessage = R.Message
+      this.Message = ''
+      this.Email = ''
     },err=>{
       console.log(err)
     })
