@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  MessageAPI:string = 'http://localhost:3000/message'
+  MessageAPI:string = 'https://portfoliobackend-chth.onrender.com/message'
 
   constructor(private http:HttpClient) { }
 
