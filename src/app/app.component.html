@@ -4,8 +4,9 @@
     </section>
     <section class="font-Pro hidden md:flex">
         <a href="#1" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Home</a>
-        <a href="#2" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Projects</a>
-        <a href="#3" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Contact</a>
+        <a href="#2" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Courses</a>
+        <a href="#3" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Projects</a>
+        <a href="#4" class="mx-[15px] text-2xl ease-in-out hover:scale-110 hover:text-[#ccc] duration-300">Contact</a>
     </section>
     <section class="flex md:hidden items-center" *ngIf="isNormal">
         <button class="mt-[5px]" (click)="OpenMenu()">
@@ -14,11 +15,18 @@
     </section>
     <section class="flex md:hidden items-center mx-auto" *ngIf="isMenu">
         <a href="#1" class="mx-[10px] text-xl duration-300">Home</a>
-        <a href="#2" class="mx-[10px] text-xl duration-300">Projects</a>
-        <a href="#3" class="mx-[10px] text-xl duration-300">Contact</a>
+        <a href="#2" class="mx-[10px] text-xl duration-300">Courses</a>
+        <a href="#3" class="mx-[10px] text-xl duration-300">Projects</a>
+        <a href="#4" class="mx-[10px] text-xl duration-300">Contact</a>
         <button class="text-red-500" (click)="CloseMenu()"><i class="fa-solid fa-x text-2xl mt-[5px] mx-[5px]"></i></button>
     </section>
 </nav>
 <app-landing id="1"></app-landing>
-<app-projects id="2"></app-projects>
-<app-contact id="3"></app-contact>
+<app-courses id="2"></app-courses>
+<section class="p-[10px] flex justify-center items-center text-2xl font-IBM text-white bg-[#1B1B1B] p-[20px]">
+    <section>
+        <h1 class="text-[23px] md:text-[27px]">Projects Down There.</h1>
+    </section>
+</section>
+<app-projects id="3"></app-projects>
+<app-contact id="4"></app-contact>

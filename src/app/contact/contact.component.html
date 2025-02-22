@@ -19,8 +19,9 @@
                 <textarea name="Message" id="MSG" cols="25" rows="10" class="rounded-[2px] p-[10px] text-gray-950 resize-none" [(ngModel)]="Message" required></textarea>
             </section>
 
-            <section class="flex justify-center my-[10px] p-[10px]">
-                <button class="p-[10px] rounded-[2px] bg-green-500 duration-500 ease-in-out hover:scale-110 font-IBM text-gray-950" (click)="SendMsg()">Submit</button>
+            <section class="flex items-center my-[10px] p-[10px] flex-col">
+                <button disabled class="p-[10px] rounded-[2px] bg-green-500 duration-500 ease-in-out hover:scale-110 font-IBM text-gray-950 w-1/2" (click)="SendMsg()">Submit</button>
+                <p class="text-red-500 font-IBM my-[10px]">Server is Disabled</p>
             </section>
 
         </form>

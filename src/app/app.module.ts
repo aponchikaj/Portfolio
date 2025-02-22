@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
 import { ApiService } from './api/api.service';
 import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClient, HttpClientModule, provideHttpClient, withFetch } from '@ang
     LandingComponent,
     ProjectsComponent,
     ContactComponent,
+    CoursesComponent,
   ],
   imports: [
     BrowserModule,
