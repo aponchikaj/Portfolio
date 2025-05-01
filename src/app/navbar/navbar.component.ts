@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  MenuMode:boolean=false
+  NormalMode:boolean=true
+  MenuSystem(){
+    if(!this.MenuMode&&this.NormalMode){
+      this.MenuMode = true
+      this.NormalMode=false
+    }else if(this.MenuMode&&!this.NormalMode){
+      this.NormalMode=true
+      this.MenuMode=false
+    }
+  }
 }
