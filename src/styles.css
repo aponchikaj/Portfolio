@@ -4,7 +4,12 @@
     font-family: 'main';
     src: url('./assets/font/Fontspring-DEMO-biennale-regular.otf') format('opentype');
 }
+@font-face {
+    font-family: 'sec';
+    src: url('./assets/font/Nunito-VariableFont_wght.ttf');
+}
 
 @theme{
-    --font-sans:'main'
+    --font-sans:'main';
+    --font-sec:'sec'
 }
