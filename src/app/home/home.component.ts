@@ -41,5 +41,7 @@ export class HomeComponent {
     },
   ]
 
+  //Contact
+  ContactServerMessage:string = ''
   
 }

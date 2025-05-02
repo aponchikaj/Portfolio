@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CoursesFormComponent } from './courses-form/courses-form.component';
 import { CreateFormComponent } from './create-form/create-form.component';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ApiService } from './api/api.service';
 
 @NgModule({
   declarations: [
@@ -28,10 +31,14 @@ import { CreateFormComponent } from './create-form/create-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideHttpClient(withFetch()),
+    ApiService
   ],
   bootstrap: [AppComponent]
 })
