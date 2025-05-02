@@ -1,30 +1,30 @@
-<main class="w-full h-auto md:h-[100vh]">
+<main class="w-full h-auto ">
  <!-- for title section -->
  <section class="w-full p-[10px] flex items-center justify-center md:justify-start md:px-[40px]">
   <h1 class="text-[30px] md:text-[35px]">Services: </h1>
  </section>
  <!-- for Service Choosing Cards -->
- <section class="flex flex-col md:flex-row items-center justify-center md:items-start md:justify-around p-[10px] w-full h-full">
-
+ <section class="flex flex-col md:flex-row items-center justify-center md:items-center md:justify-around p-[10px] w-full h-full">  
   <!-- card -->
-  <section class=" md:w-[350px] p-[10px] h-[400px] md:h-[450px] flex flex-col items-center justify-around border rounded-[20px] ">
+  <section class="mx-[10px] my-[10px] w-[300px] md:w-[350px] p-[10px] h-[400px] md:h-[450px] flex flex-col items-center justify-around border rounded-[20px] " *ngFor="let i of ScreenOPT">
    <!-- Title of card -->
-   <section>
-    <h1>Title</h1>
+   <section class="w-full flex items-center justify-center">
+    <h1 class="text-[30px] md:text-[35px]">{{i.Title}}</h1>
    </section>
    <!-- Texts -->
-   <section>
-    <ul>
-      <li>text1</li>
-      <li>text2</li>
-      <li>text3</li>
+   <section class="flex items-center justify-center text-center">
+    <ul class="flex flex-col text-center items-center">
+      <li>{{i.text1}}</li>
+      <li>{{i.text2}}</li>
+      <li>{{i.text3}}</li>
     </ul>
    </section>
-   <!-- Button To Choose. -->
-   <section>
-    <button>Choose</button>
+   <!-- Button,price,finaltext To Choose. -->
+   <section class="text-center flex flex-col items-center justify-center">
+    <h1 class="text-[25px] md:text-[30px] font-sec font-bold">{{i.price}}$</h1>
+    <p class="text-sm">{{i.FinalText}}</p>
+    <button (click)="i.ServiceChoose" class="p-[10px] my-[10px] border rounded-[10px] text-xl cursor-pointer shadow-md ease-in-out duration-200 hover:scale-110 hover:shadow-xl">Choose</button>
    </section>
   </section>
-
  </section>
 </main>
