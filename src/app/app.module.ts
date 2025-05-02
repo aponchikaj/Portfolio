@@ -10,6 +10,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CoursesFormComponent } from './courses-form/courses-form.component';
+import { CreateFormComponent } from './create-form/create-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     ProjectsComponent,
     ServicesComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CoursesFormComponent,
+    CreateFormComponent
   ],
   imports: [
     BrowserModule,

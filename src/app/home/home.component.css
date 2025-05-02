@@ -1,0 +1,15 @@
+.Animaton{
+ animation: animation;
+ animation-duration: 0.8s;
+}
+
+@keyframes animation {
+  0%{
+   opacity: 0;
+   transform: translateY(10vh)
+  }
+  100%{
+   opacity: 100%;
+   transform: translateY(0vh);
+  }
+}

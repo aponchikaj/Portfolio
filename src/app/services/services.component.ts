@@ -11,7 +11,7 @@ export class ServicesComponent{
   constructor(private router:Router){}
   //First is Services options
 
-  Services = [
+  Services: Services[] = [
     {
       Title:'Frontend',
       text1:'Creating Websites.',
@@ -19,16 +19,14 @@ export class ServicesComponent{
       text3:'Making Portfolio',
       price:29.99,
       FinalText:'Starting with',
-      ServiceChoose:()=>{this.ScreenOPT=this.FrontendOPT}
     },
     {
       Title:'Backend', 
       text1:'Creating Server.',
-      text2:'Learning NodeJS..',
+      text2:'Learning NodeJS..', 
       text3:'Making Full Stack App',
       price:39.99,
       FinalText:'Starting with',
-      ServiceChoose:this.ChooseService("Back")
     },
     {
       Title:'Create',
@@ -36,8 +34,7 @@ export class ServicesComponent{
       text2:'With Angular,Tailwind,Node..',
       text3:'For Small Medium Sized Businesses.',
       price:49.99,
-      FinalText:'Starting with',
-      ServiceChoose:this.ChooseService("Create")
+      FinalText:'Starting with'
     },
   ]
 
@@ -126,11 +123,11 @@ export class ServicesComponent{
   ScreenOPT:any = this.Services
 
   ChooseService(ServiceName:string){
-    if(ServiceName == "Front"){
+    if(ServiceName == "Frontend"){
       this.ScreenOPT = this.FrontendOPT
       console.log(this.ScreenOPT)
       console.log('Front')
-    }else if(ServiceName == "Back"){
+    }else if(ServiceName == "Backend"){
       this.ScreenOPT = this.BackendOPT
       console.log('Back')
     }else if(ServiceName == "Create"){
