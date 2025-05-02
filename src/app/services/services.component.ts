@@ -19,6 +19,7 @@ export class ServicesComponent{
       text3:'Making Portfolio',
       price:29.99,
       FinalText:'Starting with',
+      ID:"S_1"
     },
     {
       Title:'Backend', 
@@ -27,6 +28,7 @@ export class ServicesComponent{
       text3:'Making Full Stack App',
       price:39.99,
       FinalText:'Starting with',
+      ID:"S_2"
     },
     {
       Title:'Create',
@@ -34,7 +36,8 @@ export class ServicesComponent{
       text2:'With Angular,Tailwind,Node..',
       text3:'For Small Medium Sized Businesses.',
       price:49.99,
-      FinalText:'Starting with'
+      FinalText:'Starting with',
+      ID:"S_3"
     },
   ]
 
@@ -46,7 +49,8 @@ export class ServicesComponent{
       text2:'Write your first code.',
       text3:'Making small websites',
       price:29.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"F_1"
     },
     {
       Title:'Be Developer.',
@@ -54,7 +58,8 @@ export class ServicesComponent{
       text2:'Write your functional website.',
       text3:'Making Website.',
       price:34.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"F_2"
     },
     {
       Title:'Final',
@@ -62,7 +67,8 @@ export class ServicesComponent{
       text2:'Starting Real Projects',
       text3:'Making Portfolio Website.',
       price:44.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"F_3"
     },
   ]
 
@@ -73,7 +79,8 @@ export class ServicesComponent{
       text2:'Learning what libaries do.',
       text3:'NodeJS as Server',
       price:34.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"B_1"
     },
     {
       Title:'Star',
@@ -81,7 +88,8 @@ export class ServicesComponent{
       text2:'Learning ExpressJS and Mongoose',
       text3:'Making Little Server',
       price:44.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"B_2"
     },
     {
       Title:'Final',
@@ -89,7 +97,8 @@ export class ServicesComponent{
       text2:'Working with Angular.',
       text3:'Making Full Stack Website.',
       price:59.99,
-      FinalText:'Per Week.'
+      FinalText:'Per Week.',
+      ID:"B_3"
     },
   ]
 
@@ -100,7 +109,8 @@ export class ServicesComponent{
       text2:'Without Backend.',
       text3:'Simple Design',
       price:49.99,
-      FinalText:'For small sized Businesses.'
+      FinalText:'For small sized Businesses.',
+      ID:"C_1"
     },
     {
       Title:'Silver',
@@ -108,7 +118,8 @@ export class ServicesComponent{
       text2:'Contact Form.',
       text3:'Custom Design.',
       price:89.99,
-      FinalText:'For Medium Small sized Businesses.'
+      FinalText:'For Medium Small sized Businesses.',
+      ID:"C_2"
     },
     {
       Title:'Diamond',
@@ -116,22 +127,27 @@ export class ServicesComponent{
       text2:'Authorization System',
       text3:'Any kind of Design',
       price:159.99,
-      FinalText:'For Medium sized Businesses.'
+      FinalText:'For Medium sized Businesses.',
+      ID:"C_3"
     },
   ]
 
   ScreenOPT:any = this.Services
 
   ChooseService(ServiceName:string){
-    if(ServiceName == "Frontend"){
+    if(ServiceName == "S_1"){
       this.ScreenOPT = this.FrontendOPT
       console.log(this.ScreenOPT)
       console.log('Front')
-    }else if(ServiceName == "Backend"){
+    }else if(ServiceName == "S_2"){
       this.ScreenOPT = this.BackendOPT
       console.log('Back')
-    }else if(ServiceName == "Create"){
+    }else if(ServiceName == "S_3"){
       this.ScreenOPT = this.CreateOPT
+    }else if(ServiceName.startsWith("F")||ServiceName.startsWith("B")){
+      this.router.navigateByUrl('/courses')
+    }else if(ServiceName.startsWith("C")){
+      this.router.navigateByUrl('/create')
     }
   }
 }

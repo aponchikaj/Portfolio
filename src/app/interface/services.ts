@@ -5,4 +5,5 @@ export interface Services {
     text3:string
     price:number
     FinalText:string
+    ID:string
 }

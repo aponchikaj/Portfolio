@@ -1,1 +1,39 @@
-<p>create-form works!</p>
+<main class="w-full h-[90vh] flex items-center justify-center">
+
+ <section class="w-full p-[10px] flex items-center justify-center">
+  <form method="post" class="w-[300px] md:w-[350px] p-[10px] flex flex-col border rounded-[10px]">
+   <section class="my-[10px] flex flex-col">
+    <h1 class="text-[30px] md:text-[35px] text-wrap">Create</h1>
+   </section>
+   <section class="flex flex-col my-[5px]">
+    <label class="text-md md:text-lg">Email:</label>
+    <input type="email" name="email" id="email" class="p-[10px] border outline-none rounded-[10px]">
+   </section>
+   <section class="flex flex-col my-[5px]">
+    <label class="text-md md:text-lg">Name:</label>
+    <input type="text" name="email" id="email" class="p-[10px] border outline-none rounded-[10px]">
+   </section>
+   <section class="flex flex-col my-[5px]">
+    <label class="text-md md:text-lg">Lastname:</label>
+    <input type="text" name="email" id="email" class="p-[10px] border outline-none rounded-[10px]">
+   </section>
+   <section class="flex flex-col my-[5px]">
+    <label class="text-md md:text-lg">Phone:</label>
+    <input type="tel" name="email" id="email" class="p-[10px] border outline-none rounded-[10px]">
+   </section>
+   <section class="flex flex-col my-[5px]">
+    <label class="text-md md:text-lg">Option:</label>
+    <select name="course" id="course" class="p-[10px] rounded-[10px] border outline-none font-sec">
+     <option value="Bronze">Bronze - 49.99$</option>
+     <option value="Silver">Silver - 89.99$</option>
+     <option value="Diamond">Diamond - 159.99$</option>
+    </select>
+   </section>
+   <section class="mt-[10px] flex items-center justify-center flex-col">
+    <button type="submit" class="p-[10px] text-2xl border rounded-[10px] shadow-md ease-in-out duration-200 hover:scale-110 hover:shadow-xl cursor-pointer">Submit</button>
+    <button routerLink="/services" class="mt-[5px] text-purple-500 hover:text-purple-700 ease-in-out duration-200 cursor-pointer">Go Back</button>
+   </section>
+  </form>
+ </section>
+
+</main>
