@@ -26,8 +26,8 @@ export class HomeComponent {
     },
     {
       icon:this.assetsFolder+'icons/home/github.png',
-      title:'Github',
-      article:'Git,Github'
+      title:'DevOps',
+      article:'Git,Github,Docker'
     },
     {
       icon:this.assetsFolder+'icons/home/create.png',
