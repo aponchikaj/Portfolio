@@ -8,7 +8,7 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
   
-  localhostString:string = 'http://localhost:3000/'
+  localhostString:string = 'http://portfolioback-production-ab76.up.railway.app/'
 
   ContactAPI:string = `${this.localhostString}api/message`
   NewStudentAPI:string = `${this.localhostString}api/NewStudent`
