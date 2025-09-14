@@ -34,16 +34,16 @@ export class ProjectsComponent {
       url:'https://whos-dieantwoord.vercel.app/'
     },
     {
+      article:'First React Website',
+      name:'Plan IT',
+      image:`${this.AssetsString}projects/planit.png`,
+      url:'https://plan-itt.vercel.app/'
+    },
+    {
       article:'Todo App',
       name:'Todo',
       image:`${this.AssetsString}projects/todo.PNG`,
       url:'https://todo-by-lazare.vercel.app/'
-    },
-    {
-      article:'Bot named Lisa',
-      name:'Lisa',
-      image:`${this.AssetsString}projects/lisa.PNG`,
-      url:'https://lisa-bot.vercel.app/'
     },
   ]
 }
