@@ -12,25 +12,31 @@ export class ProjectsComponent {
     {
       article:'Poster Shop From Tbilisi.',
       name:'Illusion',
-      image:`${this.AssetsString}projects/illusion.PNG`,
+      image:`${this.AssetsString}projects/iluzia.png`,
       url:'https://iluzia.vercel.app/'
+    },
+    {
+      article:'DevHealth',
+      name:'DevHealth',
+      image:`${this.AssetsString}projects/devhealth.png`,
+      url:'https://www.devhealth.online'
     },
     {
       article:'Blogs website',
       name:'Lazares Blogs',
-      image:`${this.AssetsString}projects/blogs.PNG`,
+      image:`${this.AssetsString}projects/blogs.png`,
       url:'https://lazaresblog.vercel.app/home'
     },
     {
-      article:'Osiris Shoes Website (FAKE)',
-      name:'Osiris',
-      image:`${this.AssetsString}projects/Osiris.PNG`,
-      url:'https://osiris-lazare.vercel.app/'
+      article:'Sandro Menabde',
+      name:'Sandromenabde',
+      image:`${this.AssetsString}projects/sandromenabde.png`,
+      url:'https://sandromenabde.vercel.app/'
     },
     {
       article:'Information about Die antwoord.',
       name:"Whos Die Antwoord",
-      image:`${this.AssetsString}projects/antwoord.PNG`,
+      image:`${this.AssetsString}projects/antwoord.png`,
       url:'https://whos-dieantwoord.vercel.app/'
     },
     {
@@ -38,12 +44,6 @@ export class ProjectsComponent {
       name:'Plan IT',
       image:`${this.AssetsString}projects/planit.png`,
       url:'https://plan-itt.vercel.app/'
-    },
-    {
-      article:'Todo App',
-      name:'Todo',
-      image:`${this.AssetsString}projects/todo.PNG`,
-      url:'https://todo-by-lazare.vercel.app/'
     },
   ]
 }
