@@ -24,7 +24,7 @@ export class ProjectsComponent {
     {
       article:'Blogs website',
       name:'Lazares Blogs',
-      image:`${this.AssetsString}projects/blogs.png`,
+      image:`${this.AssetsString}projects/blogs.PNG`,
       url:'https://lazaresblog.vercel.app/home'
     },
     {
@@ -36,7 +36,7 @@ export class ProjectsComponent {
     {
       article:'Information about Die antwoord.',
       name:"Whos Die Antwoord",
-      image:`${this.AssetsString}projects/antwoord.png`,
+      image:`${this.AssetsString}projects/antwoord.PNG`,
       url:'https://whos-dieantwoord.vercel.app/'
     },
     {
