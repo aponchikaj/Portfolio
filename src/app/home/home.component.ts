@@ -12,12 +12,12 @@ export class HomeComponent {
     {
       icon:this.assetsFolder+'icons/home/frontend.png',
       title:'Frontend Development.',
-      article:'Angular,Tailwind,TS,JS'
+      article:'React.JS | Angular.JS | Tailwind | TypeScript | Javascript'
     },
     {
       icon:this.assetsFolder+'icons/home/backend.png',
       title:'Backend Development.',
-      article:'NodeJS,Express,JWT Auth'
+      article:'NodeJS | Express | JWT'
     },
     {
       icon:this.assetsFolder+'icons/home/database.png',
@@ -27,7 +27,7 @@ export class HomeComponent {
     {
       icon:this.assetsFolder+'icons/home/github.png',
       title:'DevOps',
-      article:'Git,Github,Docker'
+      article:'Git | Github'
     },
     {
       icon:this.assetsFolder+'icons/home/create.png',
