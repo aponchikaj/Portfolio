@@ -34,10 +34,10 @@ export class ProjectsComponent {
       url:'https://sandromenabde.vercel.app/'
     },
     {
-      article:'Information about Die antwoord.',
-      name:"Whos Die Antwoord",
-      image:`${this.AssetsString}projects/antwoord.PNG`,
-      url:'https://whos-dieantwoord.vercel.app/'
+      article:'Startup: alertup',
+      name:"Alert Up",
+      image:`${this.AssetsString}projects/alertup.png`,
+      url:'https://www.alertup.world/'
     },
     {
       article:'First React Website',
