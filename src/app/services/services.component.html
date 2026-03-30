@@ -9,7 +9,7 @@
   <section class="mx-[10px] my-[10px] w-[300px] md:w-[350px] p-[10px] h-[400px] md:h-[450px] flex flex-col items-center justify-around border rounded-[20px] Animation" *ngFor="let i of ScreenOPT">
    <!-- Title of card -->
    <section class="w-full flex items-center justify-center">
-    <h1 class="text-[30px] md:text-[35px]">{{i.Title}}</h1>
+    <h2 class="text-[30px] md:text-[35px]">{{i.Title}}</h2>
    </section>
    <!-- Texts -->
    <section class="flex items-center justify-center text-center">
@@ -21,7 +21,7 @@
    </section>
    <!-- Button,price,finaltext To Choose. -->
    <section class="text-center flex flex-col items-center justify-center">
-    <h1 class="text-[25px] md:text-[30px] font-sec font-bold">{{i.price}}$</h1>
+    <h3 class="text-[25px] md:text-[30px] font-sec font-bold">{{i.price}}$</h3>
     <p class="text-sm">{{i.FinalText}}</p>
     <button (click)="ChooseService(i.ID)" class="p-[10px] my-[10px] border rounded-[10px] text-xl cursor-pointer shadow-md ease-in-out duration-200 hover:scale-110 hover:shadow-xl">Choose</button>
    </section>

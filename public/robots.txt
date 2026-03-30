@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://lazare-mirziashvili.vercel.app/sitemap.xml
+
+# Block common non-content paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /assets/pdf/
+
+# Allow search engines to crawl all important pages
+Allow: /home
+Allow: /projects
+Allow: /services
+Allow: /contact
+Allow: /create
+Allow: /courses
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1

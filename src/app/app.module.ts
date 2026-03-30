@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { CreateFormComponent } from './create-form/create-form.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ApiService } from './api/api.service';
+import { SeoService } from './seo/seo.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,10 @@ import { ApiService } from './api/api.service';
   providers: [
     provideClientHydration(),
     provideHttpClient(withFetch()),
-    ApiService
+    ApiService,
+    SeoService,
+    Title,
+    Meta
   ],
   bootstrap: [AppComponent]
 })
