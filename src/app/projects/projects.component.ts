@@ -10,10 +10,10 @@ export class ProjectsComponent {
   AssetsString:String = '../../assets/'
   Projects = [
     {
-      article:'Poster Shop From Tbilisi.',
-      name:'Illusion',
-      image:`${this.AssetsString}projects/iluzia.png`,
-      url:'https://iluzia.vercel.app/'
+      article:'Algoora',
+      name:'Algoora',
+      image:`${this.AssetsString}projects/algoora.png`,
+      url:'https://algoora.vercel.app/'
     },
     {
       article:'DevHealth',
@@ -22,10 +22,16 @@ export class ProjectsComponent {
       url:'https://www.devhealth.online'
     },
     {
-      article:'Blogs website',
-      name:'Lazares Blogs',
-      image:`${this.AssetsString}projects/blogs.PNG`,
-      url:'https://lazaresblog.vercel.app/home'
+      article:'AlertUp',
+      name:"Alert Up",
+      image:`${this.AssetsString}projects/alertup.png`,
+      url:'https://www.alertup.world/'
+    },
+    {
+      article:'Poster Shop From Tbilisi.',
+      name:'Illusion',
+      image:`${this.AssetsString}projects/iluzia.png`,
+      url:'https://iluzia.vercel.app/'
     },
     {
       article:'Sandro Menabde',
@@ -34,16 +40,10 @@ export class ProjectsComponent {
       url:'https://sandromenabde.vercel.app/'
     },
     {
-      article:'Startup: alertup',
-      name:"Alert Up",
-      image:`${this.AssetsString}projects/alertup.png`,
-      url:'https://www.alertup.world/'
-    },
-    {
-      article:'First React Website',
-      name:'Plan IT',
-      image:`${this.AssetsString}projects/planit.png`,
-      url:'https://plan-itt.vercel.app/'
+      article:'Blogs website',
+      name:'Lazares Blogs',
+      image:`${this.AssetsString}projects/blogs.PNG`,
+      url:'https://lazaresblog.vercel.app/home'
     },
   ]
 }
