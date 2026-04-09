@@ -1,27 +1,50 @@
-# App
+# 🌐 Portfolio — Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+My personal developer portfolio site. Built to showcase my projects, skills, and story as a self-taught full-stack developer from Tbilisi, Georgia.
 
-## Development server
+> ✍️ Built at **age 14–15** (2024–2025)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🔗 [lazare-mirziashvili.vercel.app](https://github.com/aponchikaj/Portfolio) *(update with your live URL)*
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Stack
 
-## Running unit tests
+- **Framework:** React
+- **Styling:** CSS / Tailwind
+- **Routing:** React Router
+- **Deployment:** Vercel / Netlify
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## Sections
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **Hero** — intro and tagline
+- **Projects** — cards linking to live demos and GitHub
+- **About** — stack, background, story
+- **Contact** — email / socials
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Run Locally
+
+```bash
+git clone https://github.com/aponchikaj/Portfolio
+cd Portfolio
+npm install
+npm run dev
+```
+
+---
+
+## Related
+
+The backend API for this portfolio lives in [Portfolio_Back](https://github.com/aponchikaj/Portfolio_Back).
+
+---
+
+> 🇬🇪 Built in Tbilisi, Georgia by [Lazare Mirziashvili](https://github.com/aponchikaj)
